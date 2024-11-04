@@ -1,0 +1,14 @@
+.tg {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 1860px !important;
+  margin: auto !important;
+}
+
+.tg-ikon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}/*# sourceMappingURL=tg.css.map */

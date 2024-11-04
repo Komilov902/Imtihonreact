@@ -1,0 +1,65 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.dashboard__cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.dashboard__charts {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+.card h3 {
+  font-size: 1rem;
+  color: #666;
+}
+.card__value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.card__change {
+  font-size: 0.875rem;
+  color: #777;
+  margin-top: 5px;
+}
+.card__change.positive {
+  color: #28a745;
+}
+.card__change.negative {
+  color: #dc3545;
+}
+.card__progress {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  height: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+.card__progress-bar {
+  background-color: #6a5acd;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.sales-chart, .traffic-source-chart {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}/*# sourceMappingURL=dashboard.css.map */

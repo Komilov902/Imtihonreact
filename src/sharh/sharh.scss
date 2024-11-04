@@ -1,0 +1,133 @@
+
+.sharh-cont{
+    max-width: 1450px !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+    h3 {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border 0.3s ease;
+    
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+    
+    button {
+      padding: 10px 15px;
+      margin-left: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    
+    .comments-section {
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 600px;
+      height: 70px;
+      background-color: #f9f9f9;
+      white-space: nowrap;
+    }
+    
+    .marquee {
+      display: inline-block;
+      animation: marquee 10s linear infinite;
+    }
+    
+    .comment-box {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px;
+      margin-right: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    
+      &:hover {
+        transform: scale(1.05);
+      }
+    
+      .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    
+      .comment-content {
+        p {
+          margin: 0;
+          color: #555;
+    
+          &:first-child {
+            font-weight: bold;
+            color: #333;
+          }
+        }
+      }
+    
+      .delete-button {
+        margin-left: 10px;
+        padding: 2px 5px;
+        background-color: #dc3545;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 0.8em;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+}
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

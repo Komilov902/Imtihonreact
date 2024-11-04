@@ -1,0 +1,182 @@
+
+
+.form-container {
+  background-color: #2b2e38;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  h2 {
+    color: #ffeba7;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+
+    .form-style {
+      width: 100%;
+      padding: 12px 20px;
+      padding-left: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #c4c3ca;
+      background-color: #1f2029;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.3s ease;
+
+      &:focus {
+        box-shadow: 0 0 8px rgba(255, 235, 167, 0.5);
+      }
+    }
+
+    .error {
+      color: #ff5f5f;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #ffeba7;
+    color: #1f2029;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #1f2029;
+      color: #ffeba7;
+      box-shadow: 0 4px 12px rgba(255, 235, 167, 0.3);
+    }
+  }
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; // Ensure it appears above other content
+  
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      
+      .modal-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  #checked{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .foot-back2 {
+    background-color: #8d7979; // Qora fon rangi
+    color: #fff; // Matn uchun oq rang
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+    .foot-cont2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 1rem;
+  
+      .foot-fl2 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+  
+        .logo {
+          img {
+            width: 100px; // Logotipning o'lchami
+          }
+        }
+  
+        .navigation-foot {
+          ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+  
+            li {
+              font-size: 1rem;
+              transition: color 0.3s ease;
+  
+              a {
+                color: #ccc;
+                text-decoration: none;
+                &:hover {
+                  color: #f0f0f0; // Hover rang o'zgarishi
+                }
+              }
+            }
+          }
+        }
+  
+        .internet2 {
+          display: flex;
+          gap: 1rem;
+  
+          a {
+            svg {
+              width: 24px;
+              height: 24px;
+              fill: #ccc;
+              transition: fill 0.3s ease;
+  
+              &:hover {
+                fill: #f0f0f0; // Ijtimoiy tarmoqlar belgisi hover rangi
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

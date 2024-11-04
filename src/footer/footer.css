@@ -1,0 +1,54 @@
+/* footer.scss */
+.foot-back {
+  background-color: #8d7979;
+  color: #fff;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.foot-back .foot-cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.foot-back .foot-cont .foot-fl {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.foot-back .foot-cont .foot-fl .logo img {
+  width: 100px;
+}
+.foot-back .foot-cont .foot-fl .navigation-foot ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.foot-back .foot-cont .foot-fl .navigation-foot ul li {
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.foot-back .foot-cont .foot-fl .navigation-foot ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.foot-back .foot-cont .foot-fl .navigation-foot ul li a:hover {
+  color: #f0f0f0;
+}
+.foot-back .foot-cont .foot-fl .internet {
+  display: flex;
+  gap: 1rem;
+}
+.foot-back .foot-cont .foot-fl .internet a svg {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+  transition: fill 0.3s ease;
+}
+.foot-back .foot-cont .foot-fl .internet a svg:hover {
+  fill: #f0f0f0;
+}/*# sourceMappingURL=footer.css.map */

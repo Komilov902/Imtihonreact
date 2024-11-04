@@ -1,0 +1,76 @@
+// Dashboard.scss
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  
+    &__cards {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  
+    &__charts {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+  
+    h3 {
+      font-size: 1rem;
+      color: #666;
+    }
+  
+    &__value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    &__change {
+      font-size: 0.875rem;
+      color: #777;
+      margin-top: 5px;
+  
+      &.positive {
+        color: #28a745;
+      }
+  
+      &.negative {
+        color: #dc3545;
+      }
+    }
+  
+    &__progress {
+      background-color: #e9ecef;
+      border-radius: 4px;
+      height: 8px;
+      margin-top: 10px;
+      width: 100%;
+  
+      &-bar {
+        background-color: #6a5acd;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+  
+  .sales-chart, .traffic-source-chart {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  

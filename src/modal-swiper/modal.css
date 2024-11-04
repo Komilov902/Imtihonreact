@@ -1,0 +1,72 @@
+svg {
+  width: 55px;
+}
+
+.modal-w {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.modal-w::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 400px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.modal .closed {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.modal .closed svg {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: -70px;
+  width: 25px;
+  transition: all 0.4s;
+  fill: rgb(255, 206, 206);
+}
+.modal .closed svg:hover {
+  fill: white;
+}
+.modal img {
+  width: 800px !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=modal.css.map */

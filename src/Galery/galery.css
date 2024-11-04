@@ -1,0 +1,8 @@
+.galery {
+  background-image: url(../img/bg-it.avif);
+  width: 100%;
+  height: 945px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}/*# sourceMappingURL=galery.css.map */

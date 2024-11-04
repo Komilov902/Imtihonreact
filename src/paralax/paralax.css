@@ -1,0 +1,22 @@
+.paralax-cont {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.paralax {
+  background-image: url(../img/paralax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  max-height: 100%;
+  margin-top: 10px;
+  height: 300px;
+  color: white;
+}
+.paralax h1 {
+  font-size: 50px;
+}
+.paralax p {
+  font-size: 20px;
+}/*# sourceMappingURL=paralax.css.map */

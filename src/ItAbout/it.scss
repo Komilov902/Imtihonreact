@@ -1,0 +1,74 @@
+
+span{
+    color: bisque;
+    font-weight: 900;
+}
+.big-info{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-weight: 800;
+    }
+}
+.bt-test {
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+
+    img {
+        width: 10%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 214, 214);
+        transition: all ease-in-out 0.5s;
+        position: relative;
+        cursor: pointer;
+        
+        &:hover {
+            width: 35% !important;
+            filter: brightness(0.7); // This darkens the background on hover
+        }
+    }
+    #idk2{
+        margin-top: 40px;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 18px;
+        font-weight: 800;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none; // Prevents the text from blocking hover
+
+        img:hover + & {
+            opacity: 1; // Text becomes visible on hover
+        }
+    }
+    
+}
+.galery2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 22px;
+    p{
+        cursor: pointer;
+    }
+}

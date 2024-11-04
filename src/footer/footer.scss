@@ -1,0 +1,70 @@
+/* footer.scss */
+.foot-back {
+    background-color: #8d7979; // Qora fon rangi
+    color: #fff; // Matn uchun oq rang
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .foot-cont {
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 1rem;
+  
+      .foot-fl {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+  
+        .logo {
+          img {
+            width: 100px; // Logotipning o'lchami
+          }
+        }
+  
+        .navigation-foot {
+          ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+  
+            li {
+              font-size: 1rem;
+              transition: color 0.3s ease;
+  
+              a {
+                color: #ccc;
+                text-decoration: none;
+                &:hover {
+                  color: #f0f0f0; // Hover rang o'zgarishi
+                }
+              }
+            }
+          }
+        }
+  
+        .internet {
+          display: flex;
+          gap: 1rem;
+  
+          a {
+            svg {
+              width: 24px;
+              height: 24px;
+              fill: #ccc;
+              transition: fill 0.3s ease;
+  
+              &:hover {
+                fill: #f0f0f0; // Ijtimoiy tarmoqlar belgisi hover rangi
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
